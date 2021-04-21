@@ -339,7 +339,61 @@ RAW_MD= \
 	hw50.raw.md
 #endRAW_MD
 
-all: pre $(MD) $(HTML) gen_data.sql syllabus.html
+PDF= \
+	hw01.pdf \
+	hw02.pdf \
+	hw03.pdf \
+	hw04.pdf \
+	hw05.pdf \
+	hw06.pdf \
+	hw07.pdf \
+	hw08.pdf \
+	hw09.pdf \
+	hw10.pdf \
+	hw11.pdf \
+	hw12.pdf \
+	hw13.pdf \
+	hw14.pdf \
+	hw15.pdf \
+	hw16.pdf \
+	hw17.pdf \
+	hw18.pdf \
+	hw19.pdf \
+	hw20.pdf \
+	hw21.pdf \
+	hw22.pdf \
+	hw23.pdf \
+	hw24.pdf \
+	hw25.pdf \
+	hw26.pdf \
+	hw27.pdf \
+	hw28.pdf \
+	hw29.pdf \
+	hw30.pdf \
+	hw31.pdf \
+	hw32.pdf \
+	hw33.pdf \
+	hw34.pdf \
+	hw35.pdf \
+	hw36.pdf \
+	hw37.pdf \
+	hw38.pdf \
+	hw39.pdf \
+	hw40.pdf \
+	hw41.pdf \
+	hw42.pdf \
+	hw43.pdf \
+	hw44.pdf \
+	hw45.pdf \
+	hw46.pdf \
+	hw47.pdf \
+	hw48.pdf \
+	hw49.pdf \
+	hw50.pdf
+#endPDF
+
+
+all: pre $(MD) $(HTML) $(PDF) gen_data.sql syllabus.html
 
 runM4Markdown_to_HTML:
 	m4 -P tmp.raw.md | ./add-space.sh >tmp.md
@@ -370,11 +424,14 @@ gen_data.sql: $(RAW_MD) Makefile get-tags.go $(PY)
 	ed ./$@ <xxVb.ed
 	echo "file://${PP}/$@" >>open.1
 
+%.pdf: %.md
+	~/bin/md-to-pdf.sh ./$<
+
 run_all:
 	psql -a <all.sql >all.out
 
-make: m1 m2 m3 m4
-.PHONEY: make m1 m2 m3 m4
+make: m1 m2 m3 m4 m6
+.PHONEY: make m1 m2 m3 m4 m6
 
 m1:
 	rm -f ,*.sql gen_data.sql
@@ -396,6 +453,11 @@ m4:
 	ls hw*.raw.md >,a
 	ed ,a <ed.make7.ed
 	ed Makefile <ed.make6.ed
+
+m6:
+	ls hw*.md | grep raw >,a
+	ed ,a <ed.make8.ed
+	ed Makefile <ed.make9.ed
 
 gitupdate:
 	git add -A .
