@@ -11,7 +11,7 @@
 	, "log_file_name": "./log/log.out"
 
 	, "auth_key": "$ENV$QR_TODAY_AUTH_TOKEN"
-	, "base_server_url": "http://192.168.0.23:7001"
+	, "base_server_url": "http://192.168.0.36:7001"
 
 	, "auth_method":				"jwt"
 	, "x_auth_jwt_public_file" : 		"test-key/ecdsa-p256-public.pem"
@@ -29,6 +29,7 @@
 	, "use_role_priv": "no"
 	, "auth_realm": "app.example.com"
 	, "auth_2fa_enabled": "no"
+	, "rfc_6238_2fa_on": "no"
 	, "auth_login_on_register": "yes"
 	, "auth_email_confirm": "no"
 	, "use_registration_token": "no"

@@ -155,6 +155,7 @@ func main() {
 
 	// fmt.Printf("Config: %s\n", godebug.SVarI(G_ConnPool))
 	// os.Exit(1)
+	fmt.Printf("cfg.json/config: %s\n", godebug.SVarI(gCfg))
 
 	// ------------------------------------------------------------------------------
 	// Logging File

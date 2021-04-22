@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.curulean-theme.min.css">
@@ -78,6 +80,9 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item show-anon">
+				<a class="nav-link bind-click" href="#" id="register" name="register" data-click="renderRegister">Register</a>
+            </li>
+            <li class="nav-item show-anon">
 				<a class="nav-link bind-click" href="#" id="login" name="login" data-click="renderLoginPage">Login</a>
             </li>
             <li class="nav-item show-logged-in">
@@ -96,16 +101,17 @@
 
 	</div>
 
-<!-- Found at line 99 at:File: /home/pschlump/go/src/github.com/Univ-Wyo-Education/S21-4280/learn-db/mtp/mtp.go LineNo:181 -->
+<!-- Found at line 104 at:File: /home/pschlump/go/src/github.com/Univ-Wyo-Education/S21-4820/learn-db/mtp/mtp.go LineNo:181 -->
 
 <script type="text/html" id="dom-template-Register">
 <div>
 	<div class="row">
 		<div class="col-sm-6">
 			<div class="card bg-default">
-				<div class="card-header"><h2>Register for {{app_name}}</h2></div>
+				<div class="card-header"><h2>Register for PostgreSQL Class </h2></div>
 				<div class="card-body">
 					<form id="form01" action="/api/v2/register" method="POST" class="bind-submit-funcs">
+						<!--
 						<div class="form-group">
 							<label for="real_name">Your Name</label>
 							<input type="text" class="form-control" id="real_name" name="real_name"/>
@@ -114,12 +120,13 @@
 							<label for="real_name">Registration key</label>
 							<input type="text" class="form-control" id="registration_token" name="registration_token"/>
 						</div>
+						-->
 						<div class="form-group">
-							<label for="username">Email</label>
+							<label for="username">Email (Your Login Username)</label>
 							<input type="text" class="form-control" id="username" name="username"/>
 						</div>
 						<div class="form-group">
-							<label for="password">Password</label>
+							<label for="password">Password (atleat 10 characters)</label>
 							<input type="password" class="form-control" id="password" name="password"/>
 						</div>
 						<div class="form-group">
@@ -127,7 +134,9 @@
 							<input type="password" class="form-control" id="again" name="again"/>
 						</div>
 						<button type="button" class="btn btn-primary bind-click" data-click="submitRegister">Register Now</button>
+						<!--
 						<a class="btn btn-primary bind-click" data-click="forgottenPassword">Forgotton Password</a>
+						-->
 					</form>
 				</div>
 			</div>
@@ -344,7 +353,7 @@
 		<div class="col-sm-8">
 		  <div class="card mb-8 box-shadow bg-primary" style="height:200px;">
 				<div class="card-body">
-				  <p class="card-text"><h1> {{class_name}} Lessons </h1></p>
+				  <p class="card-text"><h1> PostgreSQL Database Lessons </h1></p>
 				  <div class="d-flex justify-content-between align-items-center">
 					A set of lessons for {{class_note}} for the {{class_no}} class. <br>
 				  </div>
@@ -627,7 +636,7 @@ function setAppData() {
 setAppData();
 
 </script>
-<script src="/js/cfg.js?_ran_=0177"></script>
+<script src="/js/cfg.js?_ran_=0126"></script>
 <script>
 	// $(".show-logged-in").hide();
 	var theOddOnes = document.getElementsByClassName("show-logged-in");
@@ -1346,15 +1355,15 @@ $(document).ready(function(){
 <script src="/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
 <script src="/js/bootstrap-datepicker.min.js"></script>
 
-<script src="/js/doc-index.js?_ran_=00177"></script>
-<script src="/js/table.js?_ran_=00177"></script>
+<script src="/js/doc-index.js?_ran_=00126"></script>
+<script src="/js/table.js?_ran_=00126"></script>
 
-<script src="/js/doc-form25.js?_ran_=0177"></script> <!-- login form / registration form -->
+<script src="/js/doc-form25.js?_ran_=0126"></script> <!-- login form / registration form -->
 
 <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
 
 <script>
-console.log ( "Version 0177 - 2019-12-18T00:00:00");
+console.log ( "Version 0126 - 2019-12-18T00:00:00");
 </script>
 
 </body>

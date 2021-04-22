@@ -140,10 +140,10 @@ function submitRegister ( event ) {
 			renderDisplayRegistrationQR( data );	// qr_url
 		} else {
 			if ( window.localStorage ) {
-				localStorage.setItem("jwt_token",data.auth_token);
+				localStorage.setItem("jwt_token",data.jwt_token);
 			}
-			LoggInDone ( auth_token );
 			renderMessage ( "Successful Registration", "You are now logged in<br>");
+			LoggInDone( data.jwt_token, true );
 			if ( window["postRegistrationSetup"] ) {
 				// var fx = window["postRegistrationSetup"];
 				// fx ( data );

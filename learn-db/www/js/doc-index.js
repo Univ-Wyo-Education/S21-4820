@@ -202,7 +202,8 @@ function doLogin ( event ) {
 function doRegister ( event ) {
 	if ( event ) { event.preventDefault(); }
 	console.log ( "doRegister");
-	renderRegistration();
+	// renderRegistration();
+	renderRegister();
 }
 
 LoggInDone = function ( JWTToken, showMsg ) {

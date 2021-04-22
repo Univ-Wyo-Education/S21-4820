@@ -1,0 +1,11 @@
+--2021-04-12 20:28:24--  http://localhost:7001/api/v2/register?username=pschlump%40yahoo.com&password=pschlump%40yahoo.com&again=pschlump%40yahoo.com&__method__=POST&_ran_=9546078.213036733
+Resolving localhost (localhost)... ::1, 127.0.0.1
+Connecting to localhost (localhost)|::1|:7001... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 493 [application/json]
+Saving to: ‘b’
+
+     0K                                                       100%  114M=0s
+
+2021-04-12 20:28:24 (114 MB/s) - ‘b’ saved [493/493]
+

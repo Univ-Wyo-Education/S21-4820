@@ -2,5 +2,5 @@
 	"dest": "./www",
 	"mt": "./mt",
 	"db_flag": "",
-	"CacheBurst": 17
+	"CacheBurst": 18
 }
