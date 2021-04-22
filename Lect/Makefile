@@ -1,0 +1,5 @@
+
+all:
+	./build-all.sh
+
+	
