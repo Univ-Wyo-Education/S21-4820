@@ -202,3 +202,5 @@ doing it.
 1. [Another mac keygen https://www.techrepublic.com/article/how-to-generate-ssh-keys-on-macos-mojave/](https://www.techrepublic.com/article/how-to-generate-ssh-keys-on-macos-mojave/)
 1. [Another Keygen Example https://www.ssh.com/ssh/keygen/](https://www.ssh.com/ssh/keygen/)
 1. [Setting up passwordless login https://linuxize.com/post/how-to-setup-passwordless-ssh-login/](https://linuxize.com/post/how-to-setup-passwordless-ssh-login/)
+
+Copyright (C) University of Wyoming, 2021

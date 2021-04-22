@@ -18,3 +18,4 @@ From Amazon S3 - for download (same as youtube videos)
 Overview of Redis and the redis.io documentation for Assignment 07 - use Redis a little bit.
 
 
+Copyright (C) University of Wyoming, 2021

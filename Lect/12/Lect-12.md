@@ -62,4 +62,4 @@ it but MongoDB seems to only remove the index form it's catalog - but not reclai
 5. Horrible recovery and batch times.   I have recovers indexes that take hours and the entire
 database is locked.  I have done bulk loads that take hours and the entire system is locked.
 
-
+Copyright (C) University of Wyoming, 2021

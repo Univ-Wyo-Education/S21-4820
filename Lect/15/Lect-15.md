@@ -106,3 +106,5 @@ In all cases the process chooses reliability over speed.
 3. TrueTime System: [https://medium.com/searce/internals-of-google-cloud-spanner-5927e4b83b36](https://medium.com/searce/internals-of-google-cloud-spanner-5927e4b83b36)
 4. Byzantine Fault Tollerance: [https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf)
 5. Practical Byzantine Fault Tollerance: [http://pmg.csail.mit.edu/papers/osdi99.pdf](http://pmg.csail.mit.edu/papers/osdi99.pdf)
+
+Copyright (C) University of Wyoming, 2021

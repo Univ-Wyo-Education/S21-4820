@@ -26,3 +26,5 @@ That matches with how we are using it in this class.
 
 
 1. [https://stackify.com/postgresql-performance-tutorial/](https://stackify.com/postgresql-performance-tutorial/)
+
+Copyright (C) University of Wyoming, 2021

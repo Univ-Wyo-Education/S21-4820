@@ -1,4 +1,7 @@
 
+
+m4_include(../lect-setup.m4)
+
 # Lecture 11 - Security
 
 ## News
