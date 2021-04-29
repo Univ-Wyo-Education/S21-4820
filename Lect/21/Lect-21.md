@@ -1,5 +1,9 @@
 
-m4_include(../lect-setup.m4)
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
 
 # Lecture 21 - Backup
 
