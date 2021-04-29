@@ -92,4 +92,5 @@ files or from re-running the WAL files.  Barman can provide this backup "environ
 
 
 
-https://www.nytimes.com/2021/04/27/your-money/identity-theft-auto-insurance.html
+
+Copyright (C) University of Wyoming, 2021.
