@@ -719,6 +719,12 @@ ol {
 
 <h2>Cold Backup.</h2>
 
+<ol>
+<li>Shutdown database and then backup all the files.  Copy the files to a new computer and then  <em>remember</em> to do a restore to verify that you have not missed any.</li>
+<li>Use a file-system like btrfs On Linux - to take a &ldquo;snapshot&rdquo; of the file system.  Use the ability of PostgreSQL to go int &ldquo;backup&rdquo; mode just before the
+snapshot and then as soon as the snapshot is done take the database out of backup mode.</li>
+</ol>
+
 <h2>Dump of a &ldquo;database&rdquo;.</h2>
 
 <p>This is a one-time or run by &ldquo;cron&rdquo; the scheduler system.
@@ -782,13 +788,19 @@ tar format or in .sql statements.</p>
 <li>simplified point in time recovery</li>
 </ul>
 
-<p>Under the covers it uses a tool called &lsquo;rsync&rsquo; for moving files.  This is a really useful network bacukp tool
+<p>Under the covers it uses a tool called &lsquo;rsync&rsquo; for moving files.  This is a really useful network backup tool
 that I use for all sorts of file movement - like deploying websites.  Using the &lsquo;rsync&rsquo; options in
 Barman you get incremental backups, parallel jobs, data deduplication, and network compression.</p>
 
 <p>It is worth reading the documentation on barman, <a href="http://docs.pgbarman.org/release/2.12/">http://docs.pgbarman.org/release/2.12/</a></p>
 
-<p>This tool is designed for a database with a backup database.  PostgreSQL can output all of its changes in special
+<p>This tool is designed for a database with a backup database.</p>
+
+<p><img src="barman-architecture-scenario1.png" alt="barman-architecture-scenario1.png" /></p>
+
+<p>(From the barman documentation)</p>
+
+<p>PostgreSQL can output all of its changes in special
 files called WAL - that are then transferred to a 2nd database that reads the files.   It takes considerable
 setup to get this to work - but is definitely worth it.  The &ldquo;backup&rdquo; database can become the primary in a few
 seconds - giving you a &ldquo;live&rdquo; backup.  This system requires some configuration on the application side so that
