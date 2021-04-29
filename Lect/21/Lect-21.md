@@ -7,6 +7,12 @@
 
 # Lecture 21 - Backup
 
+[Backup in PosgreSQL - https://youtu.be/c13OXubCcw4](https://youtu.be/c13OXubCcw4)<br>
+
+From Amazon S3 - for download (same as youtube videos)
+
+[Backup in PosgreSQL](http://uw-s20-2015.s3.amazonaws.com/4820-L21-backup.mp4)<br>
+
 There are a number of kinds of database backup.
 
 ## Cold Backup.
@@ -72,7 +78,7 @@ Dumps in a format that is compatible with the 'tar' tape archive tool.
 
 The primary tool that I have used is Barman.   There are other tools like Amanda that also provide these kind of features.
 
-Barman is a disaster recovery solution for PostgreSQL developed and maintained by a PostgreSQl company 2ndQuadrant.
+Barman is a disaster recovery solution for PostgreSQL developed and maintained by a PostgreSQL company 2ndQuadrant.
 
 It uses the Point-In-Time-Recovery (PITR) features that are built into the database.
 
