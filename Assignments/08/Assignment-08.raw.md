@@ -38,7 +38,7 @@ $ tar -tf yourDbName.tar >list-of-tar.txt
 $ tar -xf yourDbName.tar recover.sql
 ```
 
-Submit the list-of-tar.txt and the recover.sql file
+Submit the list-of-tar.txt and the restore.sql file
 
 (If your database is on Windows then you won't have access to the "tar" command.
 Please use the Git install of bash to access tar or use 7-zip)
