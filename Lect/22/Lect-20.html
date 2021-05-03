@@ -1,0 +1,1123 @@
+<style>
+@font-face {
+	font-family: octicons-link;
+	src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.5;
+	color: #24292e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+	color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+	color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+	color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+	color: #24292e;
+}
+
+.markdown-body .pl-ent {
+	color: #22863a;
+}
+
+.markdown-body .pl-k {
+	color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+	color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+	color: #e36209;
+}
+
+.markdown-body .pl-bu {
+	color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+	color: #fafbfc;
+	background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+	color: #fafbfc;
+	background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+	content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+	font-weight: bold;
+	color: #22863a;
+}
+
+.markdown-body .pl-ml {
+	color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+	font-weight: bold;
+	color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+	font-style: italic;
+	color: #24292e;
+}
+
+.markdown-body .pl-mb {
+	font-weight: bold;
+	color: #24292e;
+}
+
+.markdown-body .pl-md {
+	color: #b31d28;
+	background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+	color: #22863a;
+	background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+	color: #e36209;
+	background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+	color: #f6f8fa;
+	background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+	font-weight: bold;
+	color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+	color: #586069;
+}
+
+.markdown-body .pl-sg {
+	color: #959da5;
+}
+
+.markdown-body .pl-corl {
+	text-decoration: underline;
+	color: #032f62;
+}
+
+.markdown-body .octicon {
+	display: inline-block;
+	vertical-align: text-top;
+	fill: currentColor;
+}
+
+.markdown-body a {
+	background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+	outline-width: 0;
+}
+
+.markdown-body strong {
+	font-weight: inherit;
+}
+
+.markdown-body strong {
+	font-weight: bolder;
+}
+
+.markdown-body h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+.markdown-body img {
+	border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+.markdown-body hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+.markdown-body input {
+	font: inherit;
+	margin: 0;
+}
+
+.markdown-body input {
+	overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.markdown-body * {
+	box-sizing: border-box;
+}
+
+.markdown-body input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.markdown-body a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.markdown-body a:hover {
+	text-decoration: underline;
+}
+
+.markdown-body strong {
+	font-weight: 600;
+}
+
+.markdown-body hr {
+	height: 0;
+	margin: 15px 0;
+	overflow: hidden;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body hr::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+	padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.markdown-body h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.markdown-body h3 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.markdown-body h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.markdown-body h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.markdown-body h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.markdown-body p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+	margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+	x-list-style-type: lower-roman;
+	  list-style-type: decimal;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+	margin-left: 0;
+}
+
+.markdown-body code {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+}
+
+.markdown-body .octicon {
+	vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+	padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+	padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+	padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+	padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+	padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+	padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+	padding-left: 40px !important;
+}
+
+.markdown-body::before {
+	display: table;
+	content: "";
+}
+
+.markdown-body::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.markdown-body>*:first-child {
+	margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+	margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+	color: inherit;
+	text-decoration: none;
+}
+
+.markdown-body .anchor {
+	float: left;
+	padding-right: 4px;
+	margin-left: -20px;
+	line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+	outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+.markdown-body hr {
+	height: 0.25em;
+	padding: 0;
+	margin: 24px 0;
+	background-color: #e1e4e8;
+	border: 0;
+}
+
+.markdown-body blockquote {
+	padding: 0 1em;
+	color: #6a737d;
+	border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+	margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+	margin-bottom: 0;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font-size: 11px;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #c6cbd1;
+	border-bottom-color: #959da5;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+	color: #1b1f23;
+	vertical-align: middle;
+	visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+	text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+	visibility: visible;
+}
+
+.markdown-body h1 {
+	padding-bottom: 0.3em;
+	font-size: 2em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+	padding-bottom: 0.3em;
+	font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+	font-size: 1.25em;
+}
+
+.markdown-body h4 {
+	font-size: 1em;
+}
+
+.markdown-body h5 {
+	font-size: 0.875em;
+}
+
+.markdown-body h6 {
+	font-size: 0.85em;
+	color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+	padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.markdown-body li {
+	word-wrap: break-all;
+}
+
+.markdown-body li>p {
+	margin-top: 16px;
+}
+
+.markdown-body li+li {
+	margin-top: 0.25em;
+}
+
+.markdown-body dl {
+	padding: 0;
+}
+
+.markdown-body dl dt {
+	padding: 0;
+	margin-top: 16px;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.markdown-body dl dd {
+	padding: 0 16px;
+	margin-bottom: 16px;
+}
+
+.markdown-body table {
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.markdown-body table th {
+	font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.markdown-body img {
+	max-width: 100%;
+	box-sizing: content-box;
+	background-color: #fff;
+}
+
+.markdown-body img[align=right] {
+	padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+	padding-right: 20px;
+}
+
+.markdown-body code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	background-color: rgba(27,31,35,0.05);
+	border-radius: 3px;
+}
+
+.markdown-body pre {
+	word-wrap: normal;
+}
+
+.markdown-body pre>code {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	background: transparent;
+	border: 0;
+}
+
+.markdown-body .highlight {
+	margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+	margin-bottom: 0;
+	word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f6f8fa;
+	border-radius: 3px;
+}
+
+.markdown-body pre code {
+	display: inline;
+	max-width: auto;
+	padding: 0;
+	margin: 0;
+	overflow: visible;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: transparent;
+	border: 0;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+	color: #005cc5;
+	border-color: #005cc5;
+}
+
+.markdown-body kbd {
+	display: inline-block;
+	padding: 3px 5px;
+	font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	line-height: 10px;
+	color: #444d56;
+	vertical-align: middle;
+	background-color: #fafbfc;
+	border: solid 1px #d1d5da;
+	border-bottom-color: #c6cbd1;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+	position: relative;
+	z-index: 1;
+	border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+	list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+	margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+	margin: 0 0.2em 0.25em -1.6em;
+	vertical-align: middle;
+}
+
+.markdown-body hr {
+	border-bottom-color: #eee;
+}
+
+</style>
+<style>
+ol {
+    display: block;
+    list-style-type: decimal;
+}
+</style>
+
+<div class="markdown-body">
+
+<h1>Lecture 20 - Query Performance Tuning - Query Functions</h1>
+
+<style>
+.pagebreak { page-break-before: always; }
+.half { height: 200px; }
+</style>
+
+<h3>When to use temporary tables</h3>
+
+<ol>
+<li>Go from a large set of data to a small set, then apply some calculation.</li>
+<li>Forcing the query planner to do a set of operations first because it is making a bad plan (try ANALYZE first and see if you can get it to make a good plan)</li>
+<li>Independent data sets that then need to be aggregated.</li>
+</ol>
+
+<div class="pagebreak"></div>
+
+<pre><code>SELECT CurrentInvoices.seller_no, ArchivedInvoices.sales_amt, CurrentInvoices.sales_amt 
+  FROM
+    (
+      SELECT
+        seller_no,
+        sum(invoice_amt) as sales_amt
+      FROM invoice
+      WHERE invoice_date &lt; CURRENT_DATE
+      GROUP BY
+        seller_no,
+        invoice_date
+      ORDER BY
+        seller_no,
+        invoice_date
+    ) as CurrentInvoices,
+    (
+      SELECT
+        seller_no,
+        sum(invoice_amt) as sales_amt
+      FROM archived_invoice
+      WHERE invoice_date &gt;= date_trunc('month', CURRENT_DATE - interval '1' month)
+        and invoice_date &lt; date_trunc('month', CURRENT_DATE)
+      GROUP BY
+        seller_no,
+        invoice_date
+      ORDER BY
+        seller_no,
+        invoice_date
+    ) as ArchivedInvoices
+  WHERE CurrentInvoices.seller_no = ArchivedInvoices.seller_no
+;
+</code></pre>
+
+<h2>Indexes are good and bad.</h2>
+
+<p>Good:</p>
+
+<ol>
+<li>Search&rsquo;s faster, sorts faster.  This is the 43 min to 11 min.</li>
+<li>Unique constraints.  PostgreSQL requires an index for this.  Oracle, DB2 can have unique constraints w/o an index.  This is good for small tables - and a disaster for large ones.   I don&rsquo;t remember if MS SQL Server or MySQL allow this.</li>
+<li>Foreign Key check.  Think triggers.</li>
+</ol>
+
+<p>Bad:</p>
+
+<ol>
+<li>Indexes mean that when you insert/update they have to get updates.  More indexes mean slower write operations.  Most d.b.&rsquo;s are 90% search and 10% write.  This is not true for TimeSeries data where it is 90% write and 10% search.  Network database, Cassandara, Neo4j etc, are write heavy also.</li>
+<li>They take space also.</li>
+</ol>
+
+<h2>Functions in where</h2>
+
+<p>You can use functions in the where clause.   A good example is <code>soundex</code> or other
+data check / search functions.</p>
+
+<pre><code>select name
+    from users
+    where soundex($1) = soundex(name)
+;
+</code></pre>
+
+<p>This will actually perform a full table scan and run soundex 2 times for every row.
+PG has no way of knowing if the function soundex is pure-functional or not!</p>
+
+<p>v.s.</p>
+
+<pre><code>create materialized view users_soundex as
+    select t1.*, soundex(name) as name_soundex
+        from users as t1
+;
+
+create index users_soundex_p1 on users_soundex ( users_soundex )
+
+select name
+    from users_soundex
+    where name_soundex = soundex($1)
+;
+
+</code></pre>
+
+<p>This runs soundex(name) once for every row and saves the result
+during the view creation.  Then once for every insert/update.</p>
+
+<p>Then the query runs soundex once for every key/index value.</p>
+
+<p>Side Note:</p>
+
+<p>PostgreSQL can pull data directly from the index, so&hellip;</p>
+
+<pre><code>create materialized view users_soundex as
+    select t1.name, soundex(name) as name_soundex
+        from users as t1
+;
+
+create index users_soundex_p1 on users_soundex ( users_soundex, name )
+
+select name
+    from users_soundex
+    where name_soundex = soundex($1)
+;
+</code></pre>
+
+<p>will not access the table at all!</p>
+
+<pre><code>select name
+    from users_soundex
+    where name_soundex = soundex($1)
+    order by name
+;
+
+</code></pre>
+
+<p>will return data in sorted order for &ldquo;free&rdquo;.</p>
+
+<h2>Explain Plan</h2>
+
+<p>Explain plan 2 modified for printing:</p>
+
+<pre><code>pschlump=# \i explain-p3.sql
+explain analyze
+    select
+        &quot;t2&quot;.&quot;username&quot;
+    ,    &quot;t2&quot;.&quot;id&quot; as &quot;user_id&quot;
+    ,    'root' as &quot;user_role&quot;
+    from
+        &quot;t1_customer&quot; as &quot;t3&quot; inner join &quot;t1_user&quot; as &quot;t2&quot;
+            on &quot;t3&quot;.&quot;root_user_id&quot; = &quot;t2&quot;.&quot;id&quot;
+    where
+        &quot;t3&quot;.&quot;id&quot; = '3f9f4a09-2d8d-414e-5afc-038ef6cec3e0'
+union
+    select
+        &quot;t2&quot;.&quot;username&quot;
+    ,    &quot;t2&quot;.&quot;id&quot; as &quot;user_id&quot;
+    ,    &quot;t4&quot;.&quot;user_role&quot;
+    from
+         &quot;t1_customer_users&quot; as &quot;t4&quot; inner join &quot;t1_user&quot; as &quot;t2&quot;
+            on &quot;t4&quot;.&quot;user_id&quot; = &quot;t2&quot;.&quot;id&quot;
+    where
+        &quot;t4&quot;.&quot;customer_id&quot; = '3f9f4a09-2d8d-414e-5afc-038ef6cec3e0'
+order by 1 asc, 3 asc
+;
+                                                                  QUERY PLAN
+--------------------------------------------------------------------------------
+ Sort  (cost=6052.40..6052.41 rows=4 width=80) (actual time=38.323..38.324
+        ^^^^^^^^^^^^^^^^^^^^^ !!!!!!
+ rows=1 loops=1)
+   Sort Key: t2.username, ('root'::text)
+   Sort Method: quicksort  Memory: 25kB
+   -&gt;  HashAggregate  (cost=6052.32..6052.36 rows=4 width=80) (actual
+       time=38.270..38.270 rows=1 loops=1)
+        ^^^^^^^^^^^^^^^^^^
+         Group Key: t2.username, t2.id, ('root'::text)
+         -&gt;  Append  (cost=136.24..6052.29 rows=4 width=80) (actual
+             time=1.339..38.258 rows=1 loops=1)
+               -&gt;  Hash Join  (cost=136.24..3085.15 rows=1 width=58)
+                   (actual time=1.339..38.212 rows=1 loops=1)
+                     Hash Cond: (t2.id = t3.root_user_id)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     -&gt;  Seq Scan on t1_user t2  (cost=0.00..2500.02 rows=119702
+                         width=26) (actual time=0.024..16.775 rows=119702
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         loops=1)
+                     -&gt;  Hash  (cost=136.23..136.23 rows=1 width=16) (actual
+                         time=1.295..1.295 rows=1 loops=1)
+                                                  ^^^^^^^
+                           Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                           -&gt;  Seq Scan on t1_customer t3  (cost=0.00..136.23
+                               rows=1 width=16) (actual time=0.018..1.287
+                               rows=1 loops=1)
+                                 Filter: (id =
+                                 '3f9f4a09-2d8d-414e-5afc-038ef6cec3e0'::uuid)
+                                 Rows Removed by Filter: 5937
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               -&gt;  Hash Join  (cost=18.16..2967.10 rows=3 width=58) (actual
+                   time=0.044..0.044 rows=0 loops=1)
+                     Hash Cond: (t2_1.id = t4.user_id)
+                     -&gt;  Seq Scan on t1_user t2_1  (cost=0.00..2500.02
+                        ^^^^^^^^^^   ^^^^^^^^^^^^
+                         rows=119702 width=26) (actual
+                         time=0.010..0.010 rows=1 loops=1)
+                     -&gt;  Hash  (cost=18.12..18.12 rows=3 width=48) (actual
+                         time=0.003..0.003 rows=0 loops=1)
+                           Buckets: 1024  Batches: 1  Memory Usage: 8kB
+                           -&gt;  Seq Scan on t1_customer_users t4 
+                               (cost=0.00..18.12 rows=3 width=48) (actual
+                               time=0.002..0.002 rows=0 loops=1)
+                                 Filter: (customer_id =
+                                 '3f9f4a09-2d8d-414e-5afc-038ef6cec3e0'::uuid)
+ Planning time: 1.158 ms
+ Execution time: 38.521 ms
+(23 rows)
+
+</code></pre>
+
+<h2>Explain works on any DML</h2>
+
+<p>&hellip; so not just selects.  It works on UPDARE, DELERTE etc.</p>
+
+<h2>EXPLAIN v.s. EXPALIN ANALYZE</h2>
+
+<p>ANALYZE takes a bunch more time - but uses staticics from the last time you
+did an ANALYZE on the databse.   Also EXPLAIN ANALYZE may run the query
+to get actual times.  So if the query takes 43 minutes you should go for
+coffee.</p>
+
+<p><code>(cost=6052.40..6052.41</code> and Nodes.  Each block is a &ldquo;processing node&rdquo; and
+the time it reports is the time that that node took plus the sum of all child
+nodes.   At the top is the total cost for running the query.  This lets you
+isolate the chunks of the query that take the most time.</p>
+
+<p>6052.40 - first number is startup cost.  This is cost to get to 1st row.</p>
+
+<p>6052.41 - time to process entire set.</p>
+
+<p><code>(cost 1.339..38.258 rows=1 loops=1)</code> better example 1.339 for first, 38.258 for
+all rows.  <code>(cost</code> is an <em>estimate</em> based on analyze data.  DBs use a &ldquo;cost&rdquo; minimize
+approach - so with different possibilities it will pick the sub-nodes in the tree
+that give it the least cost.   This also means that if you load 10,000,000 new rows
+to ta table that use to have 10 rows and you don&rsquo;t do a new ANALYZE on the
+database then the cost values are way way out of wack and the plans generated
+will be horrid.</p>
+
+<p><code>(actual time=0.024..16.775 rows=119702</code>  this is initial/total time with data
+for actually running the query.  The units are in miliseconds.</p>
+
+<p><code>... loops=1)</code> this shows where it is actually looping over something in the
+plan.</p>
+
+<p><code>Rows Removed by Filter: 5937</code> how many rows were eliminated.</p>
+
+<p><code>Seq Scan on t1_user t2_1</code>
+This is how it is accessing the data, and what table was used and any
+indexes used.</p>
+
+<p>Let&rsquo;s start simple and work up:</p>
+
+<pre><code>create table exp_1 (
+    i int
+);
+
+EXPLAIN 
+    SELECT * 
+    FROM exp_1 
+    WHERE i = 0;
+</code></pre>
+
+<pre><code>create table exp_1 (
+    i int
+);
+CREATE TABLE
+
+EXPLAIN
+    SELECT *
+    FROM exp_1
+    WHERE i = 0;
+                      QUERY PLAN
+-------------------------------------------------------
+ Seq Scan on exp_1  (cost=0.00..41.88 rows=13 width=4)
+   Filter: (i = 0)
+(2 rows)
+</code></pre>
+
+<p>or</p>
+
+<pre><code>EXPLAIN ANALYZE
+    SELECT *
+    FROM exp_1
+    WHERE i = 0;
+                                           QUERY PLAN
+--------------------------------------------------------------------------------
+ Seq Scan on exp_1  (cost=0.00..41.88 rows=13 width=4) (actual time=0.003..0.003
+   rows=0 loops=1)
+   Filter: (i = 0)
+ Planning time: 0.059 ms
+ Execution time: 0.034 ms
+(4 rows)
+</code></pre>
+
+<p><code>Seq Scan on &lt;Table&gt;</code> means full table scan.</p>
+
+<p>Now a table with a primary key:</p>
+
+<pre><code>CREATE SEQUENCE exp_3_id_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 1
+  CACHE 1;
+
+create table exp_3 (
+    id            bigint DEFAULT nextval('exp_3_id_seq'::regclass) NOT NULL primary key,
+    user_data     bigint
+);
+
+explain analyze
+    select *
+    from exp_3
+    where id = 55
+;
+
+explain analyze
+    select *
+    from exp_3
+    where user_data = 55
+;
+</code></pre>
+
+<p>output:</p>
+
+<pre><code>...
+
+explain analyze
+    select *
+    from exp_3
+    where id = 55
+;
+                                                    QUERY PLAN
+-------------------------------------------------------------------------
+ Index Scan using exp_3_pkey on exp_3  (cost=0.15..8.17 rows=1 width=16)
+ (actual time=0.021..0.021 rows=0 loops=1)
+   Index Cond: (id = 55)
+ Planning time: 0.217 ms
+ Execution time: 0.047 ms
+(4 rows)
+
+explain analyze
+    select *
+    from exp_3
+    where user_data = 55
+;
+                                           QUERY PLAN
+--------------------------------------------------------------------------------
+ Seq Scan on exp_3  (cost=0.00..33.12 rows=9 width=16) (actual time=0.002..0.002
+ rows=0 loops=1)
+   Filter: (user_data = 55)
+ Planning time: 0.043 ms
+ Execution time: 0.017 ms
+(4 rows)
+
+</code></pre>
+
+<p>You can tune the &ldquo;costs&rdquo; that it uses - this is set in potgresql.conf.  In
+Oracle it is in <code>&lt;database&gt;_init.ora</code>, in DB2 in <code>&lt;instanceName&gt;_setup</code>.
+In MySQL&hellip; and in SQL Server&hellip; hm&hellip;  Nobody knowns what nobody knowns.</p>
+
+<p>postgresql.conf, these params:</p>
+
+<pre><code>seq_page_cost = 1.0                    # measured ON an arbitrary scale
+random_page_cost = 4.0                 # same scale AS above
+cpu_tuple_cost = 0.01                  # same scale AS above
+cpu_index_tuple_cost = 0.005           # same scale AS above
+cpu_operator_cost = 0.0025             # same scale AS above
+</code></pre>
+
+<p>Postgres lacks the ability to set this on a per-volume baseis - so you
+may want to set <code>random_page_cost = 1.0</code> on SSD and 4.0 is low for
+a real disk - it is more in the range of 16 to 50.</p>
+
+<p>Let&rsquo;s add an index to exp_3 and see the result:</p>
+
+<pre><code>create index exp_3_p1 on exp_3 ( user_data );
+
+explain analyze
+    select *
+    from exp_3
+    where user_data = 55
+;
+
+</code></pre>
+
+<p>output:</p>
+
+<pre><code>create index exp_3_p1 on exp_3 ( user_data );
+CREATE INDEX
+explain analyze
+    select *
+    from exp_3
+    where user_data = 55
+;
+                                                   QUERY PLAN
+--------------------------------------------------------------------------------
+ Bitmap Heap Scan on exp_3  (cost=4.22..14.76 rows=9 width=16) (actual
+ time=0.031..0.031 rows=0 loops=1)
+   Recheck Cond: (user_data = 55)
+   -&gt;  Bitmap Index Scan on exp_3_p1  (cost=0.00..4.22 rows=9 width=0) (actual
+       time=0.003..0.003 rows=0 loops=1)
+         Index Cond: (user_data = 55)
+ Planning time: 0.259 ms
+ Execution time: 0.666 ms
+(6 rows)
+</code></pre>
+
+<h1>Copyright</h1>
+
+<p>Copyright &copy; University of Wyoming, 2019.</p>
+
+</div>
+
