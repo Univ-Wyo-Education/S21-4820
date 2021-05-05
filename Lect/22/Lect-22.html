@@ -715,15 +715,13 @@ ol {
 
 <h1>Lecture 22 - Query Performance Tuning</h1>
 
-<h3>When to use temporary tables</h3>
+<p><a href="https://youtu.be/nnSPpLKTrbY">Explain Plans and Query Performance - https://youtu.be/nnSPpLKTrbY</a><br>
+<a href="https://youtu.be/3PP6L8nrppE">Final Review - https://youtu.be/3PP6L8nrppE</a><br></p>
 
-<ol>
-<li>Go from a large set of data to a small set, then apply some calculation.</li>
-<li>Forcing the query planner to do a set of operations first because it is making a bad plan (try ANALYZE first and see if you can get it to make a good plan)</li>
-<li>Independent data sets that then need to be aggregated.</li>
-</ol>
+<p>From Amazon S3 - for download (same as youtube videos)</p>
 
-<div class="pagebreak"></div>
+<p><a href="http://uw-s20-2015.s3.amazonaws.com/4280-L22-pt1-query-performance.mp4">Explain Plans and Query Performance</a><br>
+<a href="http://uw-s20-2015.s3.amazonaws.com/4820-L22-pt2-Final-Review.mp4">Final Review</a><br></p>
 
 <pre><code>SELECT CurrentInvoices.seller_no, ArchivedInvoices.sales_amt, CurrentInvoices.sales_amt 
   FROM
